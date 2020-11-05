@@ -5,6 +5,9 @@ This is where you can see all about me in one place.
 
 In the project directory, you can run:
 
+### `npm install`
+This installs the dependencies needed for the project.
+
 ### `npm start`
 
 Runs the app in the development mode.\
