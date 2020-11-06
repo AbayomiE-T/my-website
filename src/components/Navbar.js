@@ -27,7 +27,7 @@ export default function Navbar() {
     return (
         <nav>
             <div className="logo">
-                <h1>Abayomi</h1>
+                <h1><a href="#home">Abayomi</a></h1>
             </div>
 
             <ul ref={navRef} className="nav-items">
