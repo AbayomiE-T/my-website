@@ -22,6 +22,7 @@ nav{
 
 .nav-items{
   display: flex;
+  /* background-color: red; */
   width: 30%;
   justify-content: space-around;
 }
@@ -53,6 +54,39 @@ a{
 
 .burger:hover{
   cursor: pointer;
+}
+
+@media screen and (max-width: 1025px){
+  .nav-items{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 750px){
+  body{
+    overflow-x: hidden;
+  }
+
+  .nav-items{
+    position: absolute;
+    right: 0px;
+    top: 8vh;
+    background-color: black;
+    height: 92vh;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index:1;
+  }
+
+  .nav-items li{
+    opacity: 0;
+  }
+  
+  .burger{
+    display: block;
+  }
 }
 
 .nav-active{
@@ -133,41 +167,6 @@ a{
   left: 45%;
   transform: translateY(100%);
   animation: slideup 2s ease 16s forwards;
-}
-
-/* Media queries*/
-
-@media screen and (max-width: 1025px){
-  .nav-items{
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 750px){
-  body{
-    overflow-x: hidden;
-  }
-
-  .nav-items{
-    position: absolute;
-    right: 0px;
-    top: 8vh;
-    background-color: black;
-    height: 92vh;
-    flex-direction: column;
-    align-items: center;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-    z-index:1;
-  }
-
-  .nav-items li{
-    opacity: 0;
-  }
-  
-  .burger{
-    display: block;
-  }
 }
 
 /* ANIMATIONS */
