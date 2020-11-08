@@ -11,6 +11,10 @@ body {
   margin: 0px;
 }
 
+h1{
+  text-align: center;
+}
+
 nav{
   display: flex;
   color: white;
@@ -221,4 +225,24 @@ a{
   bottom: 50%;
   transform: translate(-50%,100%)
 }
+}
+
+#skills{
+  display: flex;
+  justify-content: space-around;
+}
+
+.frameworks{
+display: flex;
+flex-direction: column;
+}
+
+.languages{
+  display: flex;
+  flex-direction: column;
+}
+
+.v-control{
+display: flex;
+flex-direction: column;
 }
