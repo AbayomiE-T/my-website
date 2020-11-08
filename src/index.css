@@ -227,22 +227,30 @@ a{
 }
 }
 
-#skills{
-  display: flex;
-  justify-content: space-around;
+#skills .heading{
+  margin-bottom: 20px;
 }
 
-.frameworks{
+.skills-container{
+  display: flex;
+  justify-content: center;
+}
+
+.frameworks, .languages, .v-control{
 display: flex;
-flex-direction: column;
-}
-
-.languages{
-  display: flex;
-  flex-direction: column;
+flex-direction: row;
+flex-wrap: wrap;
 }
 
 .v-control{
-display: flex;
-flex-direction: column;
+  justify-content: center;
+}
+
+.frameworks h1, .languages h1, .v-control h1{
+  flex-basis: 100%;
+  text-align: left;
+}
+
+article{
+  width: 50%;
 }
