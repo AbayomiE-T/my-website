@@ -113,6 +113,7 @@ a{
 }
 
 .banner{
+  /* background-color: red; */
   width: 100%;
   position: absolute;
   top: 25%;
@@ -128,45 +129,32 @@ a{
 
 .banner span{
   text-transform: uppercase;
+  position: absolute;
+  right: 0%;
+  transform: translateX(100%);
+  opacity: 0;
 }
 
 .banner span.one{
-  display: inline-block;
-  position: absolute;
-  bottom: 40px;
-  right: 0px;
-  transform: translateX(100%);
 
   animation: slidein 5s ease 1s forwards;
+
 }
 
 .banner span.two{
-  display: inline-block;
-  position: absolute;
-  bottom: 40px;
-  right: 0px;
-  transform: translateX(100%);
-
   animation: slidein 5s ease 6s forwards;
 }
 
  .banner span.three{
-  display: inline-block;
-  position: absolute;
-  bottom: 40px;
-  right: 0px;
-  transform: translateX(100%);
-
   animation: slidein 5s ease 11s forwards;
 }
 
 .banner span.four{
-  display: inline-block;
-  position: absolute;
-  bottom: 0px;
-  left: 45%;
-  transform: translateY(100%);
-  animation: slideup 2s ease 16s forwards;
+  opacity: 0;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%,100%);
+  animation: slideup 2s ease 16s forwards; 
 }
 
 /* ANIMATIONS */
@@ -187,30 +175,33 @@ a{
   0% {opacity: 0;
      transform: translateX(100%)
   }
-
-  45% {opacity: 1;
-    right: 50%;
-}
   
   50% {opacity: 1;
        right: 50%;
+       transform: translateX(50%);
   }
   
-  50% {opacity: 1;
-    right: 50%;
-  }
-  55% {opacity: 1;
-    right: 50%;
-  }
   60% {opacity: 1;
     right: 50%;
+    transform: translateX(50%);
   }
   65% {opacity: 1;
   right: 50%;
+  transform: translateX(50%);
   } 
   70% {opacity: 1;
   right: 50%;
+  transform: translateX(50%);
   }  
+
+  80% {
+    opacity: 0.8;
+  } 
+
+  
+  85% {
+    opacity: 0;
+  }
 
   100%{
     opacity: 0;
@@ -221,13 +212,13 @@ a{
 
 @keyframes slideup {
   0% {opacity: 0;
-    bottom: 0px;
-    transform: translateY(100%)
+    left: 50%;
+    transform: translate(-50%,100%);
  }  
 
   100%{
   opacity: 1;
-  bottom: 40px;
-  transform: translateY(-0%)
+  bottom: 50%;
+  transform: translate(-50%,100%)
 }
 }
