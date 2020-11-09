@@ -11,6 +11,10 @@ body {
   margin: 0px;
 }
 
+section{
+  border-bottom: 1px solid;
+}
+
 h1{
   text-align: center;
 }
@@ -132,6 +136,7 @@ a{
 }
 
 .banner span{
+  display: inline-block;
   text-transform: uppercase;
   position: absolute;
   right: 0%;
@@ -227,13 +232,19 @@ a{
 }
 }
 
+#skills{
+  height: 100vh;
+}
+
 #skills .heading{
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .skills-container{
   display: flex;
   justify-content: center;
+  margin: 15% auto 0px;
 }
 
 .frameworks, .languages, .v-control{
@@ -251,6 +262,17 @@ flex-wrap: wrap;
   text-align: left;
 }
 
-article{
+.skill{
   width: 50%;
+}
+
+.skill div{
+  height: 50px;
+  overflow: hidden;
+  width: 50px;
+}
+
+.skill div img{
+  width: inherit;
+  height: inherit;
 }
