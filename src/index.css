@@ -233,10 +233,10 @@ a{
 }
 
 #skills{
-  height: 100vh;
+  height: 80vh;
 }
 
-#skills .heading{
+.heading{
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -244,7 +244,7 @@ a{
 .skills-container{
   display: flex;
   justify-content: center;
-  margin: 15% auto 0px;
+  margin-top: 10%;
 }
 
 .frameworks, .languages, .v-control{
@@ -275,4 +275,20 @@ flex-wrap: wrap;
 .skill div img{
   width: inherit;
   height: inherit;
+}
+
+.languages .skill{
+  margin-top: 15px;
+}
+
+#works{
+height: 100vh;
+}
+
+#about{
+height: 50vh;
+}
+
+#contact{
+height: 100vh;
 }

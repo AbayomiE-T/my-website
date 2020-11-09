@@ -40,13 +40,6 @@ export default function Skills() {
                     </div>
                     <div className="v-control">
                         <h1>Version control</h1>
-                        {/* <article className="skill">
-                            <div>
-                                <img src={ } alt="" />
-                            </div>
-                            <br></br>
-                            <span>Github</span>
-                        </article> */}
                         <SkillDetail pic={git} skillName="Github" />
                     </div>
                 </div>

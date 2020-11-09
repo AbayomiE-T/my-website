@@ -1,5 +1,8 @@
 import React, { Fragment } from 'react'
 import Skills from './Skills'
+import Works from './Works'
+import About from './About'
+import Contact from './Contact'
 
 export default function Home() {
     return (
@@ -14,6 +17,9 @@ export default function Home() {
                 </div>
             </section>
             <Skills />
+            <Works />
+            <About />
+            <Contact />
         </Fragment>
     )
 }
