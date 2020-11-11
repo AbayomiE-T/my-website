@@ -19,6 +19,7 @@ export default function Skills() {
         <>
             <section id="skills">
                 <h1 className="heading">Skills</h1>
+                <div className="rule"></div>
                 <div className="skills-container">
                     <div className="frameworks">
                         <h1>Frameworks & Libraries</h1>

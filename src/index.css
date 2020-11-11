@@ -26,7 +26,6 @@ nav{
 
 .nav-items{
   display: flex;
-  /* background-color: red; */
   width: 30%;
   justify-content: space-around;
 }
@@ -118,7 +117,6 @@ a{
 }
 
 .banner{
-  /* background-color: red; */
   width: 100%;
   position: absolute;
   top: 25%;
@@ -134,7 +132,7 @@ a{
 
 .banner span{
   display: inline-block;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   position: absolute;
   right: 0%;
   transform: translateX(100%);
@@ -211,7 +209,7 @@ a{
 
   100%{
     opacity: 0;
-    right: 100%;
+    right: 85%;
     transform: translateX(-100%);
   }
 }
@@ -242,12 +240,16 @@ a{
   display: flex;
   justify-content: center;
   margin-top: 10%;
+  justify-content: space-around;
 }
 
 .frameworks, .languages, .v-control{
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
+/* background-color: rgba(52, 222, 235); */
+width: 25%;
+/* border: 2px solid rgb(52, 222, 235); */
 }
 
 .v-control{
@@ -256,17 +258,20 @@ flex-wrap: wrap;
 
 .frameworks h1, .languages h1, .v-control h1{
   flex-basis: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 .skill{
   width: 50%;
+  text-align: center;
 }
 
 .skill div{
   height: 50px;
   overflow: hidden;
   width: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skill div img{
@@ -280,7 +285,11 @@ flex-wrap: wrap;
 
 #works{
 height: 100vh;
-background-color: rgb(52, 222, 235);
+background-color: #042a2d;
+}
+
+#works h1{
+  color: #eefcfd;
 }
 
 #about{
@@ -291,4 +300,22 @@ color: white;
 
 #contact{
 height: 100vh;
+background-color: #042a2d;
+}
+
+#contact h1{
+  color: #eefcfd
+}
+
+.content{
+  width: 50%;
+  margin: 5% auto;
+}
+
+.rule{
+  width: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(52, 222, 235);
+  height: 3px;
 }
