@@ -2,6 +2,8 @@ import React from 'react'
 import email from '../icons/mail-icon.webp'
 import phone from '../icons/phone-icon.png'
 import address from '../icons/address-icon.png'
+import git from '../icons/github-icon-blue.png'
+import linkedin from '../icons/linkedin-icon.png'
 
 export default function Contact() {
     return (
@@ -53,6 +55,15 @@ export default function Contact() {
                     </button>
                     </div>
                 </form>
+
+                <div className="socials">
+                    <div className="social-icon">
+                        <a href="https://github.com/AbayomiE-T?tab=repositories"><img src={git} alt="" /></a>
+                    </div>
+                    <div className="social-icon">
+                        <a href="https://www.linkedin.com/in/abayomi-adebowale-71010515a/"><img src={linkedin} alt="" /></a>
+                    </div>
+                </div>
             </div>
 
         </section>
