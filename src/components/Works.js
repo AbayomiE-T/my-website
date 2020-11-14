@@ -5,7 +5,26 @@ export default function Works() {
         <section id="works">
             <h1 className="heading">Works</h1>
             <div className="rule"></div>
-            <p style={{ textAlign: 'center', color: 'white' }}>To be added soon!</p>
+            <div className="works-container">
+                <div className="work">
+                    <img src="https://www.placecage.com/200/300" alt="" />
+                </div>
+                <div className="work">
+                    <img src="https://www.placecage.com/g/200/300" alt="" />
+                </div>
+                <div className="work">
+                    <img src="https://www.placecage.com/c/200/300" alt="" />
+                </div>
+                <div className="work">
+                    <img src="https://www.placecage.com/gif/200/300" alt="" />
+                </div>
+                <div className="work">
+                    <img src="https://www.stevensegallery.com/200/300" alt="" />
+                </div>
+                <div className="work">
+                    <img src="https://www.stevensegallery.com/g/200/300" alt="" />
+                </div>
+            </div>
         </section>
     )
 }
