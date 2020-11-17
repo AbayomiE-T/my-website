@@ -5,6 +5,7 @@ export default function Works() {
         <section id="works">
             <h1 className="heading">Works</h1>
             <div className="rule"></div>
+
             <div className="works-container">
                 <div className="work">
                     <img src="https://www.placecage.com/200/300" alt="" />
