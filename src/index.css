@@ -236,50 +236,6 @@ a{
   margin-bottom: 20px;
 }
 
-.skills-container{
-  display: flex;
-  justify-content: center;
-  margin-top: 10%;
-  justify-content: space-around;
-}
-
-.frameworks, .languages, .v-control{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-width: 25%;
-}
-
-.v-control{
-  justify-content: center;
-}
-
-.frameworks h1, .languages h1, .v-control h1{
-  flex-basis: 100%;
-  text-align: center;
-}
-
-.skill{
-  width: 50%;
-  text-align: center;
-}
-
-.skill div{
-  height: 50px;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.skill div img{
-  width: inherit;
-  height: inherit;
-}
-
-.languages .skill{
-  margin-top: 15px;
-}
-
 #portfolio{
 height: 100vh;
 background-color: #042a2d;
@@ -290,9 +246,9 @@ background-color: #042a2d;
 }
 
 #about{
-height: 50vh;
-background-color: black;
-color: white;
+height: 100vh;
+background-color: white;
+color: black;
 }
 
 #contact{
@@ -306,8 +262,66 @@ position: relative;
 }
 
 .content{
-  width: 50%;
+  width: 90%;
+  height: 75%;
   margin: 5% auto;
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-container{
+  width: 30%;
+}
+
+.about-me{
+  width: 100%;
+  height: 60%;
+  background-color: rgb(52, 222, 235);
+  position: relative;
+}
+
+.about-me span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.skills{
+  width: 70%;
+  margin-left: 20px;
+}
+
+.skills article{
+  background-color: rgb(52, 222, 235);
+  position: relative;
+  height: 7%;
+  margin-bottom: 5px;
+}
+
+.skill .skill-name{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.skill-name{
+  left: 10px;
+}
+
+.percentage{
+  position: absolute;
+  right: 0px;
+  background-color: #b0f2f7;
+  height: 100%;
+  width: 5%;
+}
+
+.percentage span{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .rule{
