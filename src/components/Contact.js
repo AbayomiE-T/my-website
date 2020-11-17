@@ -11,6 +11,9 @@ export default function Contact() {
             <div className="contact-container">
 
                 <form>
+                    <h1>
+                        Have a question or project? Shoot me an email!
+                    </h1>
                     <div className="form-item">
                         <input id="name" type="text" placeholder="Name" />
                     </div>
