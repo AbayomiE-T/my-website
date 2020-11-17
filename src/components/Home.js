@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import Skills from './Skills'
-import Works from './Works'
+import Portfolio from './Portfolio'
 import About from './About'
 import Contact from './Contact'
 
@@ -17,7 +17,7 @@ export default function Home() {
                 </div>
             </section>
             <Skills />
-            <Works />
+            <Portfolio />
             <About />
             <Contact />
         </Fragment>

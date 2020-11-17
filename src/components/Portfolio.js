@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Works() {
+export default function Portfolio() {
     return (
-        <section id="works">
-            <h1 className="heading">Works</h1>
+        <section id="portfolio">
+            <h1 className="heading">Portfolio</h1>
             <div className="rule"></div>
 
             <div className="works-container">

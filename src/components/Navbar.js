@@ -32,7 +32,7 @@ export default function Navbar() {
 
             <ul ref={navRef} className="nav-items">
                 <li className="nav-item"><a href="#skills">Skills</a></li>
-                <li className="nav-item"><a href="works">Works</a></li>
+                <li className="nav-item"><a href="portfolio">Portfolio</a></li>
                 <li className="nav-item"><a href="#about">About</a></li>
                 <li className="nav-item"><a href="#contact">Contact</a></li>
             </ul>
