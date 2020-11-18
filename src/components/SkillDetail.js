@@ -1,13 +1,13 @@
 import React from 'react'
 
-export default function SkillDetail({ pic, skillName }) {
+export default function SkillDetail({ skillName, percentage }) {
 
     return (
         <article className="skill">
-            <div>
-                <img src={pic} alt="" />
+            <span className="skill-name">{skillName}</span>
+            <div className="percentage">
+                <span>{percentage}%</span>
             </div>
-            <span>{skillName}</span>
         </article>
     )
 }

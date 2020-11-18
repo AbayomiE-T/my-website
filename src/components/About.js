@@ -1,4 +1,5 @@
 import React from 'react'
+import SkillDetail from './SkillDetail'
 
 export default function About() {
     return (
@@ -20,72 +21,17 @@ export default function About() {
                 </div>
 
                 <div className="skills">
-                    <article className="skill">
-                        <span className="skill-name">CSS</span>
-                        <div className="percentage">
-                            <span>90%</span>
-                        </div>
-                    </article>
-                    <article className="skill">
-                        <span className="skill-name">HTML</span>
-                        <div className="percentage">
-                            <span>90%</span>
-                        </div>
-                    </article>
-                    <article className="skill">
-                        <span className="skill-name">Javascript</span>
-                        <div className="percentage">
-                            <span>90%</span>
-                        </div>
-                    </article>
-                    <article className="skill">
-                        <span className="skill-name">React</span>
-                        <div className="percentage">
-                            <span>90%</span>
-                        </div>
-                    </article>
-                    <article className="skill">
-                        <span className="skill-name">Redux</span>
-                        <div className="percentage">
-                            <span>90%</span>
-                        </div>
-                    </article>
-                    <article className="skill">
-                        <span className="skill-name">Bootstrap</span>
-                        <div className="percentage">
-                            <span>90%</span>
-                        </div>
-                    </article>
-                    <article className="skill">
-                        <span className="skill-name">Django</span>
-                        <div className="percentage">
-                            <span>90%</span>
-                        </div>
-                    </article>
-                    <article className="skill">
-                        <span className="skill-name">Python</span>
-                        <div className="percentage">
-                            <span>90%</span>
-                        </div>
-                    </article>
-                    <article className="skill">
-                        <span className="skill-name">Java</span>
-                        <div className="percentage">
-                            <span>90%</span>
-                        </div>
-                    </article>
-                    <article className="skill">
-                        <span className="skill-name">C++</span>
-                        <div className="percentage">
-                            <span>90%</span>
-                        </div>
-                    </article>
-                    <article className="skill">
-                        <span className="skill-name">Github</span>
-                        <div className="percentage">
-                            <span>90%</span>
-                        </div>
-                    </article>
+                    <SkillDetail skillName="CSS" percentage="90" />
+                    <SkillDetail skillName="HTML" percentage="90" />
+                    <SkillDetail skillName="Javascript" percentage="90" />
+                    <SkillDetail skillName="React" percentage="90" />
+                    <SkillDetail skillName="Redux" percentage="90" />
+                    <SkillDetail skillName="Bootstrap" percentage="90" />
+                    <SkillDetail skillName="Django" percentage="90" />
+                    <SkillDetail skillName="Python" percentage="90" />
+                    <SkillDetail skillName="Java" percentage="90" />
+                    <SkillDetail skillName="C++" percentage="90" />
+                    <SkillDetail skillName="Github" percentage="90" />
                 </div>
             </div>
         </section>
