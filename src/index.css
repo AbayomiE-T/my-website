@@ -227,13 +227,41 @@ a{
 }
 }
 
-#skills{
+#services{
   height: 80vh;
+  position: relative;
 }
 
 .heading{
   padding-top: 20px;
   margin-bottom: 20px;
+}
+
+.service-container{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-bottom: 2px solid;
+  display: flex;
+  justify-content: space-around;
+}
+
+.service{
+  height: 400px;
+  width: 15%;
+}
+
+.service *{
+  margin-bottom: 10px;
+}
+
+.service-image-container{
+  background-color: black;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #portfolio{
@@ -314,7 +342,43 @@ position: relative;
   right: 0px;
   background-color: #b0f2f7;
   height: 100%;
-  width: 70px;
+}
+
+/* Width classes for the skill bars*/
+.w9{
+  width: 70px
+}
+
+.w8{
+  width: 140px
+}
+
+.w7{
+  width: 280px
+}
+
+.w6{
+  width: 560px
+}
+
+.w5{
+  width: 1120px
+}
+
+.w4{
+  width: 2240px
+}
+
+.w3{
+  width: 4480px
+}
+
+.w2{
+  width: 70px
+}
+
+.w1{
+  width: 70px
 }
 
 .percentage span{

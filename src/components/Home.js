@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import Skills from './Skills'
+import Services from './Services'
 import Portfolio from './Portfolio'
 import About from './About'
 import Contact from './Contact'
@@ -16,7 +16,7 @@ export default function Home() {
                     <span className="four">I am available for hire</span>
                 </div>
             </section>
-            <Skills />
+            <Services />
             <Portfolio />
             <About />
             <Contact />

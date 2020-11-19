@@ -21,17 +21,17 @@ export default function About() {
                 </div>
 
                 <div className="skills">
-                    <SkillDetail skillName="CSS" percentage="90" />
-                    <SkillDetail skillName="HTML" percentage="90" />
-                    <SkillDetail skillName="Javascript" percentage="90" />
-                    <SkillDetail skillName="React" percentage="90" />
-                    <SkillDetail skillName="Redux" percentage="90" />
-                    <SkillDetail skillName="Bootstrap" percentage="90" />
-                    <SkillDetail skillName="Django" percentage="90" />
-                    <SkillDetail skillName="Python" percentage="90" />
-                    <SkillDetail skillName="Java" percentage="90" />
-                    <SkillDetail skillName="C++" percentage="90" />
-                    <SkillDetail skillName="Github" percentage="90" />
+                    <SkillDetail skillName="CSS" percentage="90" width="w9" />
+                    <SkillDetail skillName="HTML" percentage="90" width="w9" />
+                    <SkillDetail skillName="Javascript" percentage="90" width="w9" />
+                    <SkillDetail skillName="React" percentage="90" width="w9" />
+                    <SkillDetail skillName="Redux" percentage="90" width="w9" />
+                    <SkillDetail skillName="Bootstrap" percentage="90" width="w9" />
+                    <SkillDetail skillName="Django" percentage="90" width="w9" />
+                    <SkillDetail skillName="Python" percentage="90" width="w9" />
+                    <SkillDetail skillName="Java" percentage="90" width="w9" />
+                    <SkillDetail skillName="C++" percentage="90" width="w9" />
+                    <SkillDetail skillName="Github" percentage="90" width="w9" />
                 </div>
             </div>
         </section>
