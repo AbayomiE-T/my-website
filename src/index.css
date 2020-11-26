@@ -66,7 +66,7 @@ a{
 }
 
 @media screen and (max-width: 750px){
-  body{
+  html, body{
     overflow-x: hidden;
   }
 
@@ -114,6 +114,11 @@ a{
   height: 92vh;
   position: relative;
   background-color: rgb(52, 222, 235);
+  /* background-image: url("./bg-image/blue-background.jpg"); */
+   /* background-image: url("./bg-image/pexels-anthony-132477.jpg"); */
+   /* background-image: url("./bg-image/pexels-tomáš-malík-3607083.jpg"); */
+  background-size: cover;
+  background-position: center;
 }
 
 .banner{
@@ -234,7 +239,7 @@ a{
 
 .heading{
   padding-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .service-container{
@@ -525,13 +530,14 @@ footer{
 }
 
 .works-container{
-  width: 50%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 300px;
+  grid-auto-columns: 300px;
 }
 .work{
 width: 100%;
@@ -539,6 +545,7 @@ overflow: hidden;
 }
 
 .work img{
-  height: inherit;
-  width: inherit;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
