@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 import sixty_six from '../portfolio-images/Studio Sixty Six/logo-1.webp'
 import mjlonir from '../portfolio-images/Mjlonir/Logo.png'
 import soundboard from '../portfolio-images/Soundboard/logo.png'
@@ -13,7 +14,7 @@ const Portfolio = () => {
 
             <div className="portfolio-container">
                 <div className="thumbnail">
-                    <Link className="portfolio-link">
+                    <Link to="/StudioSixtySix" className="portfolio-link">
                         <img src={sixty_six} alt="" />
                     </Link>
                 </div>
@@ -23,7 +24,7 @@ const Portfolio = () => {
                     </Link>
                 </div>
                 <div className="thumbnail">
-                    <Link className="portfolio-link">
+                    <Link to="/Soundboard" className="portfolio-link">
                         <img src={soundboard} alt="" />
                     </Link>
                 </div>
