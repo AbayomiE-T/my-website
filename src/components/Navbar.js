@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import { Link } from 'react-scroll'
 
 export default function Navbar() {
 
@@ -31,10 +32,54 @@ export default function Navbar() {
             </div>
 
             <ul ref={navRef} className="nav-items">
-                <li className="nav-item"><a href="#services">Services</a></li>
-                <li className="nav-item"><a href="#portfolio">Portfolio</a></li>
-                <li className="nav-item"><a href="#about">About</a></li>
-                <li className="nav-item"><a href="#contact">Contact</a></li>
+                <li className="nav-item">
+                    <Link
+                        activeClass="active"
+                        to="services"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >
+                        Services
+                </Link>
+                </li>
+                <li className="nav-item">
+                    <Link
+                        activeClass="active"
+                        to="portfolio"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >
+                        Portfolio
+                </Link>
+                </li>
+                <li className="nav-item">
+                    <Link
+                        activeClass="active"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >
+                        About
+                </Link>
+                </li>
+                <li className="nav-item">
+                    <Link
+                        activeClass="active"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >
+                        Contact
+                </Link>
+                </li>
             </ul>
 
             <div ref={burgerRef} className="burger" onClick={handleClick}>
