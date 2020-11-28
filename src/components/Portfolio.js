@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import sixty_six from '../portfolio-images/Studio Sixty Six/logo-1.webp'
+import mjlonir from '../portfolio-images/Mjlonir/Logo.png'
+import soundboard from '../portfolio-images/Soundboard/logo.png'
 
-export default function Portfolio() {
+
+const Portfolio = () => {
     return (
         <section id="portfolio">
             <h1 className="heading">Portfolio</h1>
@@ -9,13 +13,19 @@ export default function Portfolio() {
 
             <div className="portfolio-container">
                 <div className="thumbnail">
-                    <Link className="portfolio-link"></Link>
+                    <Link className="portfolio-link">
+                        <img src={sixty_six} alt="" />
+                    </Link>
                 </div>
                 <div className="thumbnail">
-                    <Link className="portfolio-link"></Link>
+                    <Link to="/Mjlonir" className="portfolio-link">
+                        <img className="mjlonir" src={mjlonir} alt="" />
+                    </Link>
                 </div>
                 <div className="thumbnail">
-                    <Link className="portfolio-link"></Link>
+                    <Link className="portfolio-link">
+                        <img src={soundboard} alt="" />
+                    </Link>
                 </div>
                 <div className="thumbnail">
                     <Link className="portfolio-link"></Link>
@@ -24,3 +34,5 @@ export default function Portfolio() {
         </section>
     )
 }
+
+export default Portfolio;

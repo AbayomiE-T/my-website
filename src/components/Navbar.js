@@ -1,7 +1,8 @@
 import React, { useRef } from 'react'
 import { Link } from 'react-scroll'
+import { withRouter } from "react-router-dom"
 
-export default function Navbar() {
+const Navbar = ({ history }) => {
 
     const navRef = useRef()
     const burgerRef = useRef()
@@ -28,12 +29,30 @@ export default function Navbar() {
     return (
         <nav>
             <div className="logo">
-                <h1><a href="#home">Abayomi</a></h1>
+                <h1><Link
+                    onClick={e => {
+                        e.preventDefault();
+                        history.push('/');
+                    }}
+                    activeClass="active"
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                >
+                    Abayomi
+                </Link>
+                </h1>
             </div>
 
             <ul ref={navRef} className="nav-items">
                 <li className="nav-item">
                     <Link
+                        onClick={e => {
+                            e.preventDefault();
+                            history.push('/');
+                        }}
                         activeClass="active"
                         to="services"
                         spy={true}
@@ -46,6 +65,10 @@ export default function Navbar() {
                 </li>
                 <li className="nav-item">
                     <Link
+                        onClick={e => {
+                            e.preventDefault();
+                            history.push('/');
+                        }}
                         activeClass="active"
                         to="portfolio"
                         spy={true}
@@ -58,6 +81,10 @@ export default function Navbar() {
                 </li>
                 <li className="nav-item">
                     <Link
+                        onClick={e => {
+                            e.preventDefault();
+                            history.push('/');
+                        }}
                         activeClass="active"
                         to="about"
                         spy={true}
@@ -70,6 +97,10 @@ export default function Navbar() {
                 </li>
                 <li className="nav-item">
                     <Link
+                        onClick={e => {
+                            e.preventDefault();
+                            history.push('/');
+                        }}
                         activeClass="active"
                         to="contact"
                         spy={true}
@@ -90,3 +121,5 @@ export default function Navbar() {
         </nav>
     )
 }
+
+export default withRouter(Navbar)
