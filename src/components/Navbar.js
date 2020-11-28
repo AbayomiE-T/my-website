@@ -1,11 +1,22 @@
-import React, { useRef } from 'react'
-import { Link } from 'react-scroll'
-import { withRouter } from "react-router-dom"
+import React, { useRef, useEffect } from 'react'
+import { Link, withRouter, useLocation } from "react-router-dom"
 
 const Navbar = ({ history }) => {
 
-    const navRef = useRef()
-    const burgerRef = useRef()
+    const navRef = useRef();
+    const burgerRef = useRef();
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            let elem = document.getElementById(location.hash.slice(1))
+            if (elem) {
+                elem.scrollIntoView({ behavior: "smooth" })
+            }
+        } else {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+        }
+    }, [location,])
 
     const handleClick = () => {
         //For toggling the nav
@@ -30,16 +41,7 @@ const Navbar = ({ history }) => {
         <nav>
             <div className="logo">
                 <h1><Link
-                    onClick={e => {
-                        e.preventDefault();
-                        history.push('/');
-                    }}
-                    activeClass="active"
-                    to="home"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
+                    to="/#home"
                 >
                     Abayomi
                 </Link>
@@ -49,64 +51,28 @@ const Navbar = ({ history }) => {
             <ul ref={navRef} className="nav-items">
                 <li className="nav-item">
                     <Link
-                        onClick={e => {
-                            e.preventDefault();
-                            history.push('/');
-                        }}
-                        activeClass="active"
-                        to="services"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
+                        to="/#services"
                     >
                         Services
                 </Link>
                 </li>
                 <li className="nav-item">
                     <Link
-                        onClick={e => {
-                            e.preventDefault();
-                            history.push('/');
-                        }}
-                        activeClass="active"
-                        to="portfolio"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
+                        to="/#portfolio"
                     >
                         Portfolio
                 </Link>
                 </li>
                 <li className="nav-item">
                     <Link
-                        onClick={e => {
-                            e.preventDefault();
-                            history.push('/');
-                        }}
-                        activeClass="active"
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
+                        to="/#about"
                     >
                         About
                 </Link>
                 </li>
                 <li className="nav-item">
                     <Link
-                        onClick={e => {
-                            e.preventDefault();
-                            history.push('/');
-                        }}
-                        activeClass="active"
-                        to="contact"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
+                        to="/#contact"
                     >
                         Contact
                 </Link>
