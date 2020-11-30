@@ -1,8 +1,25 @@
-import React from 'react'
-import git from '../icons/git.png'
-import linkedin from '../icons/linkedin-icon.png'
+import React, { useRef } from 'react';
+import git from '../icons/git.png';
+import linkedin from '../icons/linkedin-icon.png';
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
+
+    const formRef = useRef();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_2e20cp6', 'template_ywuks5c', e.target, 'user_9gjSE64fnHbpHYgE9RrRj')
+            .then((result) => {
+                console.log(result.text)
+            }).catch((error) => {
+                console.log(error.text)
+            })
+
+        formRef.current.reset();
+    }
+
     return (
         <section id="contact">
             <h1 className="heading">Contact</h1>
@@ -10,21 +27,21 @@ export default function Contact() {
 
             <div className="contact-container">
 
-                <form>
+                <form ref={formRef} onSubmit={handleSubmit}>
                     <h1>
                         Have a question or project? Shoot me an email!
                     </h1>
                     <div className="form-item">
-                        <input id="name" type="text" placeholder="Name" />
+                        <input name="name" type="text" placeholder="Name" />
                     </div>
                     <div className="form-item">
-                        <input id="email" type="text" placeholder="Email" />
+                        <input name="email" type="text" placeholder="Email" />
                     </div>
                     <div className="form-item">
-                        <input id="subject" type="text" placeholder="Subject" />
+                        <input name="subject" type="text" placeholder="Subject" />
                     </div>
                     <div className="form-item">
-                        <textarea name="message" id="message" placeholder="Message">
+                        <textarea name="message" placeholder="Message">
 
                         </textarea>
                     </div>

@@ -137,9 +137,6 @@ a{
   height: 92vh;
   position: relative;
   background-color: rgb(52, 222, 235);
-  /* background-image: url("./bg-image/blue-background.jpg"); */
-   /* background-image: url("./bg-image/pexels-anthony-132477.jpg"); */
-   /* background-image: url("./bg-image/pexels-tomáš-malík-3607083.jpg"); */
   background-size: cover;
   background-position: center;
 }
@@ -624,6 +621,11 @@ footer{
 
 .description{
   margin-bottom: 25px;
+}
+
+.description a{
+  color: blue;
+  text-decoration: underline;
 }
 
 .description-image{
