@@ -164,6 +164,14 @@ a{
   textarea{
     height: 75px !important;
   }
+
+  .portfolio-content{
+    width: 100% !important;
+  }
+
+  .portfolio-banner img{
+    width: 75% !important;
+  }
 }
 
 #home{
@@ -535,7 +543,6 @@ input{
   padding-left: 5px;
   padding-bottom: 5px;
   outline: none;
-  background-color: rgb(63, 70, 82);
   border: none;
   color: black;
   background-color: white;
@@ -634,7 +641,7 @@ footer{
 }
 
 .description{
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 .description a{
