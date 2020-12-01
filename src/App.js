@@ -4,22 +4,22 @@ import Mjlonir from './components/Portfolio/Mjlonir'
 import StudioSixtySix from './components/Portfolio/StudioSixtySix'
 import Soundboard from './components/Portfolio/Soundboard'
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
 
-    <Router>
-      <Switch>
-        <div className="App">
-          <Navbar />
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/Mjlonir" component={Mjlonir} />
           <Route path="/StudioSixtySix" component={StudioSixtySix} />
           <Route path="/Soundboard" component={Soundboard} />
-        </div>
-      </Switch>
-    </Router>
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 

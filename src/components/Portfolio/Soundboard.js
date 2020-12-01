@@ -6,7 +6,7 @@ import firebase from '../../portfolio-images/Soundboard/firebase-logo.png'
 export default function Soundboard() {
 
     useEffect(() => {
-        document.title = 'Soundboard'
+        document.title = 'Soundboard | Abayomi'
     }, [])
 
     return (

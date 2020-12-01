@@ -8,7 +8,7 @@ import product_page from '../../portfolio-images/Studio Sixty Six/product-page.p
 export default function StudioSixtySix() {
 
     useEffect(() => {
-        document.title = "Studio Sixty Six"
+        document.title = "Studio Sixty Six | Abayomi"
     }, []);
 
     return (

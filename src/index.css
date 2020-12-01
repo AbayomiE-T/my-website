@@ -308,6 +308,7 @@ position: relative;
   width: 1000px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .portfolio-link{
@@ -588,18 +589,14 @@ footer{
 }
 
 .portfolio-logo{
-  height: 100px;
+  height: 150px;
   width: 100%;
   margin: 150px 0px 50px 0px;
-  position: relative;
+  text-align: center;
 }
 
 .portfolio-logo img{
-  height: 100%;
-  width: 100px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 150px;
 }
 
 .portfolio-banner{

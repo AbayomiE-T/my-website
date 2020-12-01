@@ -28,9 +28,6 @@ const Portfolio = () => {
                         <img src={soundboard} alt="" />
                     </Link>
                 </div>
-                <div className="thumbnail">
-                    <Link className="portfolio-link"></Link>
-                </div>
             </div>
         </section>
     )
