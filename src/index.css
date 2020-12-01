@@ -148,6 +148,22 @@ a{
   .percentage{
     display: none;
   }
+
+  form{
+    width: 100% !important;
+  }
+
+  .form-item{
+    margin-bottom: 5px !important;
+  }
+
+  .form-item button{
+    width: 100%;
+  }
+
+  textarea{
+    height: 75px !important;
+  }
 }
 
 #home{
@@ -363,7 +379,7 @@ color: black;
 }
 
 #contact{
-height: 100vh;
+min-height: 100vh;
 background-color: #042a2d;
 position: relative;
 }
@@ -495,7 +511,7 @@ position: relative;
 }
 
 form{
-  width: 50%;
+  width: 55%;
   text-align: center;
 }
 
@@ -509,6 +525,10 @@ form h1{
   margin-bottom: 20px;
 }
 
+::placeholder{
+  color: black;
+}
+
 input{
   width: 100%;
   height: 30px;
@@ -517,7 +537,8 @@ input{
   outline: none;
   background-color: rgb(63, 70, 82);
   border: none;
-  color: white;
+  color: black;
+  background-color: white;
 }
 
 textarea{
@@ -560,7 +581,7 @@ footer{
   bottom: 0px;
   background-color: #031b1d;
   width: 100%;
-  height: 150px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
