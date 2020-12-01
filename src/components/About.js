@@ -1,5 +1,7 @@
-import React from 'react'
-import SkillDetail from './SkillDetail'
+import React from 'react';
+import SkillDetail from './SkillDetail';
+
+import me from '../bg-image/me.jpg';
 
 export default function About() {
     return (
@@ -9,29 +11,26 @@ export default function About() {
             <div className="content">
                 <div className="about-me-container">
                     <div className="about-me">
-                        <span>Image of me</span>
+                        <img src={me} alt="" />
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, qui dicta. Id, vitae repudiandae suscipit consequuntur officiis quia voluptatem
-                        voluptates culpa pariatur ratione modi nisi reiciendis, enim ipsam sapiente ullam praesentium commodi ex nesciunt adipisci nulla natus, libero ipsa! Nobis
-                        repudiandae laboriosam eos cumque id officia debitis reiciendis nihil esse quaerat quasi, expedita eligendi rerum rem saepe quae quas, repellendus, incidunt modi.
-                        Magnam harum eos cum odit deserunt, itaque a vitae explicabo enim repellat. Labore inventore, accusantium enim dolore sunt esse cum sed ad pariatur voluptatum
-                        quisquam ipsam quia obcaecati corrupti numquam nobis perspiciatis distinctio fugiat? Nulla quia voluptas ab.
+                        I am a software developer based in Ottawa, Ontario. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, culpa, aspernatur eos deserunt placeat
+                        incidunt vel rem saepe sint labore nulla minima facere soluta velit.
                     </p>
                 </div>
 
                 <div className="skills">
-                    <SkillDetail skillName="CSS" percentage="90" width="w9" />
-                    <SkillDetail skillName="HTML" percentage="90" width="w9" />
-                    <SkillDetail skillName="Javascript" percentage="90" width="w9" />
-                    <SkillDetail skillName="React" percentage="90" width="w9" />
-                    <SkillDetail skillName="Redux" percentage="90" width="w9" />
-                    <SkillDetail skillName="Bootstrap" percentage="90" width="w9" />
-                    <SkillDetail skillName="Django" percentage="90" width="w9" />
-                    <SkillDetail skillName="Python" percentage="90" width="w9" />
-                    <SkillDetail skillName="Java" percentage="90" width="w9" />
-                    <SkillDetail skillName="C++" percentage="90" width="w9" />
-                    <SkillDetail skillName="Github" percentage="90" width="w9" />
+                    <SkillDetail skillName="CSS" percentage="90" width="90%" />
+                    <SkillDetail skillName="HTML" percentage="90" width="90%" />
+                    <SkillDetail skillName="Javascript" percentage="90" width="90%" />
+                    <SkillDetail skillName="React" percentage="80" width="80%" />
+                    <SkillDetail skillName="Redux" percentage="80" width="80%" />
+                    <SkillDetail skillName="Bootstrap" percentage="60" width="60%" />
+                    <SkillDetail skillName="Django" percentage="60" width="60%" />
+                    <SkillDetail skillName="Python" percentage="75" width="75%" />
+                    <SkillDetail skillName="Java" percentage="70" width="70%" />
+                    <SkillDetail skillName="C++" percentage="70" width="70%" />
+                    <SkillDetail skillName="Github" percentage="70" width="70%" />
                 </div>
             </div>
         </section>
