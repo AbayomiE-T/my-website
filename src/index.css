@@ -94,6 +94,17 @@ a{
     width: 100% !important;
     margin: 20px 0px 0px 0px !important;
   }
+
+  .service-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service{
+    height: 33% !important;
+    width: 40% !important;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 750px){
@@ -121,6 +132,7 @@ a{
   .burger{
     display: block;
   }
+
 }
 
 .nav-active{
@@ -174,6 +186,11 @@ a{
   }
 }
 
+@media screen and (max-width: 350px){
+  .service{
+    width: 100% !important;
+  }
+}
 #home{
   height: 92vh;
   width: 100%;
@@ -296,8 +313,7 @@ a{
 }
 
 #services{
-  height: 80vh;
-  position: relative;
+  min-height: 80vh;
 }
 
 .heading{
@@ -306,12 +322,9 @@ a{
 }
 
 .service-container{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border-bottom: 2px solid;
+  margin: 150px auto 40px auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .service{
@@ -323,13 +336,25 @@ a{
   margin-bottom: 10px;
 }
 
+.service p{
+  text-align: center;
+}
+
 .service-image-container{
-  background-color: black;
+  background-color: rgb(52, 222, 235);
   height: 200px;
   width: 200px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.service-image-container img{
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 #portfolio{
