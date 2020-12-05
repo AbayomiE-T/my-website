@@ -15,7 +15,7 @@ export default function About() {
                     </div>
                     <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Who am I?</h2>
                     <p>
-                        It's "Ah-ba-yummy". I am a software developer based in Ottawa, Ontario. I have experience in both front-end and back-end developemnt. As a recent Computer Science graduate,
+                        It's "Ah-ba-yummy". I am a software developer based in Ottawa, Ontario. I have experience in both front-end and back-end development. As a recent Computer Science graduate,
                         i'm ready to apply my skills to the software industry, take on new challenges and also learn from experts who have been in the field longer than I have. In my downtime, you can find me listening
                         to the same Smashing Pumpkins albums over again or enjoying video games.
                     </p>
