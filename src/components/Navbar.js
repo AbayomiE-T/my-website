@@ -41,7 +41,6 @@ const Navbar = ({ history }) => {
         <nav>
             <div className="logo">
                 <h1><Link
-                    onClick={handleClick}
                     to="/#home"
                 >
                     Abayomi
