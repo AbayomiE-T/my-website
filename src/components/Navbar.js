@@ -36,11 +36,12 @@ const Navbar = ({ history }) => {
         //Animate the burger
         burgerRef.current.classList.toggle('toggle-burger')
     }
-
+    //Might want to remove the handleClick funtion on the navlinks
     return (
         <nav>
             <div className="logo">
                 <h1><Link
+                    onClick={handleClick}
                     to="/#home"
                 >
                     Abayomi
@@ -51,6 +52,7 @@ const Navbar = ({ history }) => {
             <ul ref={navRef} className="nav-items">
                 <li className="nav-item">
                     <Link
+                        onClick={handleClick}
                         to="/#services"
                     >
                         Services
@@ -58,6 +60,7 @@ const Navbar = ({ history }) => {
                 </li>
                 <li className="nav-item">
                     <Link
+                        onClick={handleClick}
                         to="/#portfolio"
                     >
                         Portfolio
@@ -65,6 +68,7 @@ const Navbar = ({ history }) => {
                 </li>
                 <li className="nav-item">
                     <Link
+                        onClick={handleClick}
                         to="/#about"
                     >
                         About
@@ -72,6 +76,7 @@ const Navbar = ({ history }) => {
                 </li>
                 <li className="nav-item">
                     <Link
+                        onClick={handleClick}
                         to="/#contact"
                     >
                         Contact
