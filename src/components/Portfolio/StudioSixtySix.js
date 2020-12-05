@@ -39,9 +39,9 @@ export default function StudioSixtySix() {
 
                 <div className="description">
                     <h2>Artists</h2>
-                    <p>This is one of the pages I worked on. I was tasked with retrieving the artists from the database and display them in a grid-like format. Each artists appearing to
+                    <p>This is one of the pages I worked on. I was tasked with retrieving the artists from the database and displaying them in a grid-like format. Each artists appearing to
                     be in the form of a portrait and each row containing four artists. On smaller screens, each row would contain two artists. I was able to achieve this type of layout using
-                    CSS grid layout.</p>
+                    CSS grid.</p>
                 </div>
 
                 <div className="description-image">

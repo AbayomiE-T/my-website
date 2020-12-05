@@ -12,8 +12,9 @@ export default function Home() {
         <Fragment>
             <section id="home">
                 <div className="banner">
-                    <h1>Abayomi Adebowale</h1>
-                    <span className="four">I am a Software Developer</span>
+                    <div className="slogan">
+                        <h1>Abayomi Adebowale</h1>
+                    </div>
                 </div>
             </section>
             <Services />
