@@ -1,6 +1,4 @@
 import React, { useRef } from 'react';
-import git from '../icons/git.png';
-import linkedin from '../icons/linkedin-icon.png';
 import emailjs from 'emailjs-com';
 
 export default function Contact() {
@@ -25,12 +23,10 @@ export default function Contact() {
             <h1 className="heading">Contact</h1>
             <div className="rule"></div>
 
-            <div className="contact-container">
+            <p style={{ textAlign: 'center', fontSize: '1.5rem', marginTop: '50px' }}>Shoot me an email with your project details. I would love to hear from you!</p>
 
+            <div className="contact-container">
                 <form ref={formRef} onSubmit={handleSubmit}>
-                    <h1>
-                        Have a question or project? Shoot me an email!
-                    </h1>
                     <div className="form-item">
                         <input name="name" type="text" placeholder="Name" />
                     </div>
@@ -47,19 +43,15 @@ export default function Contact() {
                     </div>
                     <div className="form-item button">
                         <button>
-                            SEND MESSAGE
+                            SUBMIT
                     </button>
                     </div>
                 </form>
             </div>
 
             <footer>
-                <div className="social-icon">
-                    <a href="https://github.com/AbayomiE-T?tab=repositories"><img src={git} alt="" /></a>
-                </div>
-                <div className="social-icon">
-                    <a href="https://www.linkedin.com/in/abayomi-adebowale-71010515a/"><img src={linkedin} alt="" /></a>
-                </div>
+                <div><i className='fab fa-github'></i></div>
+                <div><i className='fab fa-linkedin-in'></i></div>
             </footer>
         </section>
     )
