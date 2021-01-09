@@ -6,7 +6,7 @@ export default function SkillDetail({ skillName, percentage, width }) {
         <article className="skill">
             <p>{skillName}</p>
             <div>
-                <div className="barfill" style={{ width: { width } }}></div>
+                <div className="barfill" style={{ width: width }}></div>
             </div>
         </article>
     )
