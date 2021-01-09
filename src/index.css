@@ -15,6 +15,22 @@ body {
   margin: 0px;
 }
 
+/* HIGHLIGHT COLOURS */
+.h-colour-1{
+  background-color: #38EFCF;
+}
+
+.h-colour-2{
+  background-color: #0062AE;
+}
+
+.h-colour-3{
+  background-color: #E1F2FF;
+}
+/* END */
+
+
+
 h1{
   text-align: center;
 }
@@ -82,41 +98,6 @@ a{
     width: 50%;
   }
 
-  .portfolio-container{
-    width: 500px !important;
-    height: 45% !important;
-  }
-
-  .thumbnail{
-    width: 50% !important;
-  }
-}
-
-@media screen and (max-width: 810px){
-  .content{
-    flex-direction: column;
-  }
-
-  .about-me-container{
-    width: 100% !important;
-    margin-bottom: 25px;
-  }
-
-  .skills{
-    width: 100% !important;
-    margin: 20px 0px 0px 0px !important;
-  }
-
-  .service-container{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .service{
-    height: 33% !important;
-    width: 40% !important;
-    margin-bottom: 50px;
-  }
 }
 
 @media screen and (max-width: 750px){
@@ -161,62 +142,6 @@ a{
 
 .toggle-burger .line3{
   transform: rotate(45deg) translate(-5px,-6px);
-}
-
-@media screen and (max-width: 600px){
-   .portfolio-container{
-    width: 75% !important;
-  }
-
-  .slogan h1{
-    font-size: 3rem !important;
-  }
-
-  .thumbnail{
-    height: 50% !important;
-  }
-
-  .percentage{
-    display: none;
-  }
-
-  form{
-    width: 100% !important;
-  }
-
-  .form-item{
-    margin-bottom: 5px !important;
-  }
-
-  textarea{
-    height: 75px !important;
-  }
-
-  .portfolio-content{
-    width: 100% !important;
-  }
-
-  .portfolio-banner img{
-    width: 75% !important;
-  }
-
-  button{
-    width: 100% !important;
-  }
-}
-
-@media screen and (max-width: 350px){
-  .service{
-    width: 100% !important;
-  }
-
-   .portfolio-container{
-    width: 90% !important;
-  } 
-
-  .slogan h1{
-    font-size: 2rem !important;
-  }
 }
 
 .rule{
@@ -272,14 +197,15 @@ a{
   }
 }
 
-#services{
-  min-height: 80vh;
-}
-
 .heading{
-  padding-top: 30px;
+  text-align: center;
+  padding-top: 32px;
   font-weight: 300;
   font-size: 2rem;
+}
+
+#services{
+  min-height: 80vh;
 }
 
 .service-container{
@@ -448,169 +374,132 @@ color: black;
   transform: translateY(-50%);
 }
 
-#contact{
-  min-height: 100vh;
-  background-color: white;
-  position: relative;
-  }
+/* CONTACT SECTION */
 
-  #contact .rule {
-    background-color: #38EFCF;
-  }
+#contact{
+  min-height: 92vh;
+}
 
 .contact-container{
-  display: flex;
-  width: 75%; 
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.contact-details{
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.contact-detail{
-  display: flex;
-}
-
-.contact-detail p{
-  color: #eefcfd;
-  align-self: center;
-}
-
-.contact-icon{
-  background-color: rgb(52, 222, 235);
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
-}
-
-.contact-icon img{
-  height: inherit;
-  width: inherit;
+  margin: 0px auto 0px auto;
+  height: 100%;
+  width: 50%; 
 }
 
 form{
-  width: 55%;
-  text-align: center;
+  height: 50%;
+  margin-top: 80px;
 }
 
-form h1{
-  margin-bottom: 20px;
-  color: rgb(52, 222, 235);
+form > div + div{
+  margin-top: 16px;
 }
 
 .form-item{
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-::placeholder{
-  color: black;
+  height: 50px;
 }
 
 input{
+  height: 100%;
   width: 100%;
-  height: 30px;
-  padding-left: 5px;
-  padding-bottom: 5px;
-  outline: none;
   border: none;
   background-color: #E1F2FF;
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: black;
+  padding-left: 8px;
+  outline: none;
+}
+
+.form-item-message{
+  height: 300px
 }
 
 textarea{
-  width: 100%;
-  height: 150px;
-  padding-left: 5px;
-  padding-top: 5px;
-  font-size: 1rem;
   background-color: #E1F2FF;
+  height: 100%;
+  width: 100%;
   border: none;
-  outline: none;
-}
-
-button{
-  border: none;
-  background-color: rgb(52, 222, 235);
-  outline: none;
-  cursor: pointer;
-  width: 50%;
-  height: 50px;
-  width: 30%;
-  border-radius: 30px;
+  padding-left: 8px;
+  padding-top: 8px;
   font-family: inherit;
+  font-size: 1.2rem;
+  outline: none;
 }
 
-.form-item.button{
+.form-item-button{
+  height: 100px;
   text-align: right;
 }
 
-.form-item button{
-  font-weight: bold;
+button{
+  background-color: white;
+  border: 2px solid #38EFCF;
+  height: 50%;
+  width: 30%;
   font-family: inherit;
-  letter-spacing: 2px;
-}
-
-input{
-  font-family: inherit;
-}
-
-textarea{
-  font-family: inherit;
+  border-radius: 40px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
 }
 
 footer{
-  position: absolute;
-  bottom: 0px;
-  background-color: #38EFCF;
+  min-height: 8vh;
   width: 100%;
-  height: 75px;
+  background-color: #38EFCF;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+::placeholder{
+  color: black
 }
 
 footer div{
   border: 2px solid white;
   border-radius: 50%;
   padding: 10px;
-}
-
-footer > div + div{
-  margin-left: 20px; 
+  cursor: pointer;
+  }
+  
+footer > div + div {
+  margin-left: 20px;
 }
 
 footer i{
-  font-size: 30px;
+  font-size: 25px;
   color: white;
 }
 
-.social-icon{
-  width: 50px;
-  height: 50px;
-  margin-left: 20px;
-  background-color: rgb(52, 222, 235);
-  padding: 5px;
+/* HOVER EFFECTS */
+
+footer div:hover{
+  background-color: white;
+  transition: all 0.5s ease-out;
 }
 
-.social-icon a{
-  width: 100%;
-  height: 100%;
+footer div:hover i{
+  color: #38EFCF;
+  transition: all 0.5s ease-out;
 }
 
-.social-icon img{
-  width: inherit;
-  height: inherit;
+button:hover {
+  background-color: #38EFCF;
+  color: white;
+  transition: all 0.5s ease-out;
 }
 
+button:focus{
+  transform: scale(1,1);
+  transition: all 0.5s ease-out;
+}
+
+/* END */
+
+/* CONTACT SECTION END */
 .portfolio-logo{
   height: 150px;
   width: 100%;
@@ -655,4 +544,22 @@ footer i{
 
 .description-image img{
   width: 100%;
+}
+
+@media only screen and (max-width: 870px){
+  .portfolio-container{
+    grid-template-columns: repeat(1, 400px);
+  }
+
+  .contact-container{
+    width: 80%;
+    }
+
+  button{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px){
+
 }

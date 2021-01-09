@@ -19,40 +19,41 @@ export default function Contact() {
     }
 
     return (
-        <section id="contact">
-            <h1 className="heading">Contact</h1>
-            <div className="rule"></div>
+        <>
+            <section id="contact">
+                <div className="contact-container">
+                    <h1 className="heading">Contact</h1>
+                    <div className="rule h-colour-1"></div>
 
-            <p style={{ textAlign: 'center', fontSize: '1.5rem', marginTop: '50px' }}>Shoot me an email with your project details. I would love to hear from you!</p>
+                    <p style={{ textAlign: 'center', fontSize: '1.5rem', marginTop: '50px' }}>Shoot me an email with your project details. I would love to hear from you!</p>
 
-            <div className="contact-container">
-                <form ref={formRef} onSubmit={handleSubmit}>
-                    <div className="form-item">
-                        <input name="name" type="text" placeholder="Name" />
-                    </div>
-                    <div className="form-item">
-                        <input name="email" type="text" placeholder="Email" />
-                    </div>
-                    <div className="form-item">
-                        <input name="subject" type="text" placeholder="Subject" />
-                    </div>
-                    <div className="form-item">
-                        <textarea name="message" placeholder="Message">
+                    <form ref={formRef} onSubmit={handleSubmit}>
+                        <div className="form-item">
+                            <input name="name" type="text" placeholder="Name" />
+                        </div>
+                        <div className="form-item">
+                            <input name="email" type="text" placeholder="Email" />
+                        </div>
+                        <div className="form-item">
+                            <input name="subject" type="text" placeholder="Subject" />
+                        </div>
+                        <div className="form-item-message">
+                            <textarea name="message" placeholder="Message">
 
-                        </textarea>
-                    </div>
-                    <div className="form-item button">
-                        <button>
-                            SUBMIT
+                            </textarea>
+                        </div>
+                        <div className="form-item-button">
+                            <button>
+                                SUBMIT
                     </button>
-                    </div>
-                </form>
-            </div>
-
+                        </div>
+                    </form>
+                </div>
+            </section>
             <footer>
                 <div><i className='fab fa-github'></i></div>
                 <div><i className='fab fa-linkedin-in'></i></div>
             </footer>
-        </section>
+        </>
     )
 }
