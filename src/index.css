@@ -29,12 +29,6 @@ body {
 }
 /* END */
 
-
-
-h1{
-  text-align: center;
-}
-
 nav{
   display: flex;
   color: white;
@@ -243,10 +237,12 @@ a{
   transform: translate(-50%,-50%);
 }
 
+/* PORTFOLIO SECTION START */
+
 #portfolio{
 min-height: 100vh;
-background-color: #042a2d;
 position: relative;
+padding-bottom: 50px;
 }
 
 #portfolio h1{
@@ -291,88 +287,83 @@ position: relative;
   background-color: black;
 }
 
+/* PORTFOLIO SECTION END */
+
+/* ABOUT SECTION START */
+
 #about{
 min-height: 100vh;
-background-color: white;
-color: black;
+background-image: linear-gradient(to bottom right,  #38EFCF, #0062AE);
+padding-bottom: 40px;
 }
 
-.content{
-  width: 90%;
-  margin: 5% auto;
+#about > p{
+  color: white;
+  padding-top: 50px;
+  font-size: 1.3rem;
+  text-align: center; 
+  width: 70%;
+  margin: 0px auto 0px auto;
+}
+
+.about-me-wrapper{
+  width: 95%;
   display: flex;
-  justify-content: center;
+  background-color: white;
+  margin: 100px auto 0px auto;
+  border-radius: 30px;
+  box-shadow: 1px 3px 10px grey;
+  position: relative;
 }
 
-.about-me-container{
+.image-wrapper{
   width: 30%;
 }
 
-.about-me{
+.image-wrapper > img{
   width: 100%;
-  height: 60%;
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.about-me img{
   height: 100%;
-  width: 100%;
+  border-radius: 30px 0px 0px 30px;
   object-fit: cover;
-  object-position: 50% 30%;
+  object-position: center;
 }
 
 .skills{
   width: 70%;
-  margin-left: 20px;
 }
 
-.skills article{
-  background-color: #b0f2f7;
-  position: relative;
+.skills-wrapper{
+  width: 95%;
+  margin: 0px auto 0px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.skill{
   height: 50px;
-  margin-bottom: 5px;
 }
 
-.skill .skill-name{
-  height: 100%;
-  width: 100px;
-  background-color: #042a2d;;
-  position: absolute;
-  top: 50%;
-  left: 0px;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+.skill > p{
   font-weight: 500;
 }
 
-.skill-name{
-  left: 10px;
+div > .skill+ .skill{
+  margin-top: 8px;
 }
 
-.bar-fill{
+.skill > div{
+  background-color: #E1F2FF;
+  height: 50%;
+  border-radius: 30px;
+}
+
+.barfill{
+  background-image: linear-gradient(to right, #0062AE,  #38EFCF);
   height: 100%;
-  background-color: rgb(52, 222, 235);
+  border-radius: 30px;
 }
 
-.percentage{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0px;
-  height: 100%;
-  font-weight: 500;
-}
-
-.percentage span{
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-}
+/* ABOUT SECTION END */
 
 /* CONTACT SECTION */
 
@@ -544,6 +535,47 @@ button:focus{
 
 .description-image img{
   width: 100%;
+}
+
+@media only screen and (max-width: 990px){
+
+  .service-container{
+    flex-direction: column;
+  }
+
+  .service-container > div{
+    width: 100%;
+    height: 33.333%;
+  }
+
+  .service-container > div:nth-of-type(2){
+    border: none;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+  }
+
+  .about-me-wrapper{
+    display: block;
+    width: 90%;
+  }
+
+  .image-wrapper{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-wrapper > img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  .skills{
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 870px){

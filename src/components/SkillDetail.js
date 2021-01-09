@@ -4,13 +4,9 @@ export default function SkillDetail({ skillName, percentage, width }) {
 
     return (
         <article className="skill">
-            <div className="bar-fill" style={{ width: `${width}` }}>
-                <div className="skill-name">
-                    <span>{skillName}</span>
-                </div>
-            </div>
-            <div className="percentage">
-                <span>{percentage}%</span>
+            <p>{skillName}</p>
+            <div>
+                <div className="barfill" style={{ width: { width } }}></div>
             </div>
         </article>
     )
