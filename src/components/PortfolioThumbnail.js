@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 const PortfolioThumbnail = ({ route, thumbnail, styles }) => {
 
     return (
-        <div className="thumbnail">
+        <article className="thumbnail">
             <Link to={route} className="portfolio-link">
                 <img className={styles} src={thumbnail} alt="" />
             </Link>
-        </div>
+        </article>
     )
 }
 

@@ -10,8 +10,8 @@ import soundboard from '../portfolio-images/Soundboard/logo.png'
 const Portfolio = () => {
     return (
         <section id="portfolio">
-            <h1 className="heading">Portfolio</h1>
-            <div className="rule"></div>
+            <h1 class="heading">Portfolio</h1>
+            <div class="rule h-colour-1"></div>
 
             <div className="portfolio-container">
                 <PortfolioThumbnail route="/StudioSixtySix" thumbnail={sixty_six} />
