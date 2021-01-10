@@ -51,8 +51,8 @@ export default function Contact() {
                 </div>
             </section>
             <footer>
-                <div><i className='fab fa-github'></i></div>
-                <div><i className='fab fa-linkedin-in'></i></div>
+                <a href="https://www.linkedin.com/in/abayomiadebowale/"><i className='fab fa-linkedin-in'></i></a>
+                <a href="https://github.com/AbayomiE-T?tab=repositories"><i className='fab fa-github'></i></a>
             </footer>
         </>
     )
