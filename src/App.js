@@ -1,4 +1,3 @@
-import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Mjlonir from './components/Portfolio/Mjlonir'
 import StudioSixtySix from './components/Portfolio/StudioSixtySix'
@@ -11,7 +10,6 @@ function App() {
 
     <BrowserRouter>
       <div className="App">
-        <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/Mjlonir" component={Mjlonir} />

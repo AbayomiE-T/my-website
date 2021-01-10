@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect } from 'react'
+import Navbar from './Navbar'
 import Services from './Services'
 import Portfolio from './Portfolio'
 import About from './About'
@@ -11,11 +12,13 @@ export default function Home() {
     return (
         <Fragment>
             <section id="home">
-                <div className="banner">
-                    <div className="slogan">
-                        <h1>Abayomi Adebowale</h1>
-                    </div>
+
+                <div className="slogan">
+                    <p>Creating something beautiful...</p>
+                    <p>One line of code at a time.</p>
                 </div>
+
+                <Navbar />
             </section>
             <Services />
             <Portfolio />

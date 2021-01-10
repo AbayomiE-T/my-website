@@ -15,6 +15,10 @@ body {
   margin: 0px;
 }
 
+.App{
+  position: relative;
+}
+
 /* HIGHLIGHT COLOURS */
 .h-colour-1{
   background-color: #38EFCF;
@@ -32,7 +36,6 @@ body {
 nav{
   display: flex;
   color: white;
-  background-color: black;
   justify-content: space-around;
   height: 8vh;
   align-items: center;
@@ -50,21 +53,21 @@ nav{
 
 a{
   text-decoration: none;
-  color: white;
+  color: #E8E8E8;
   cursor: pointer;
 }
 
 .nav-item a{
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .nav-item a:hover{
-  color: rgb(52, 222, 235);
+  color: white;
 }
 
 .logo h1{
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .logo h1 a{
@@ -102,9 +105,9 @@ a{
   .nav-items{
     position: absolute;
     right: 0px;
-    top: 8vh;
-    background-color: black;
-    height: 92vh;
+    top: 0px;
+    background-color: #008080;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
@@ -115,9 +118,10 @@ a{
   .nav-items li{
     opacity: 0;
   }
-  
+
   .burger{
     display: block;
+    z-index: 1;
   }
 
 }
@@ -145,13 +149,11 @@ a{
 }
 
 #home{
-  height: 92vh;
+  height: 100vh;
   width: 100%;
-  height: 92vh;
-  background-image: url('./bg-image/particle.jpeg');
-  background-size: cover;
-  background-position: center;
+  background-image: linear-gradient(to bottom right, #38EFCF, #0062AE);
   color: white;
+  position: relative;
 }
 
 .banner{
@@ -174,6 +176,16 @@ a{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  width: 90%;
+}
+
+.slogan > p{
+  text-align: center;
+  font-size: 3.3rem;
+}
+
+.slogan > p + p{
+  margin-top: 16px;
 }
 
 
@@ -193,9 +205,15 @@ a{
 
 .heading{
   text-align: center;
-  padding-top: 32px;
+  padding-top: 4rem;
   font-weight: 300;
   font-size: 2rem;
+}
+
+.p-heading{
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 16px;
 }
 
 /* SERVICES SECTION START*/
@@ -206,6 +224,7 @@ a{
 
 #services > div:nth-of-type(1){
   background-image: linear-gradient(to bottom right, #38EFCF, #0062AE);
+  height: 25vh;
   padding-bottom: 16rem;
 }
 
@@ -301,7 +320,7 @@ padding-bottom: 50px;
 #about{
 min-height: 100vh;
 background-image: linear-gradient(to bottom right,  #38EFCF, #0062AE);
-padding-bottom: 40px;
+padding-bottom: 8rem;
 }
 
 #about > p{
@@ -516,7 +535,7 @@ button:focus{
 }
 
 .portfolio-banner img{
-  width: 50%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -603,6 +622,20 @@ button:focus{
   button{
     width: 50%;
   }
+
+  .portfolio-content{
+    width: 90%;
+  }
+
+  .slogan > p{
+    font-size: 2.3rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .slogan > p{
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 500px){
@@ -619,5 +652,11 @@ button:focus{
 
   .thumbnail + .thumbnail{
     margin-top: 32px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .slogan > p{
+    font-size: 1rem;
   }
 }

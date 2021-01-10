@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import { Link, withRouter, useLocation } from "react-router-dom"
 
-const Navbar = ({ history }) => {
+const Navbar = ({ history, bgColor }) => {
 
     const navRef = useRef();
     const burgerRef = useRef();
@@ -38,7 +38,7 @@ const Navbar = ({ history }) => {
     }
     //Might want to remove the handleClick funtion on the navlinks
     return (
-        <nav>
+        <nav style={{ backgroundColor: bgColor }}>
             <div className="logo">
                 <h1><Link
                     to="/#home"
@@ -48,7 +48,7 @@ const Navbar = ({ history }) => {
                 </h1>
             </div>
 
-            <ul ref={navRef} className="nav-items">
+            <ul ref={navRef} style={{ backgroundColor: bgColor }} className="nav-items">
                 <li className="nav-item">
                     <Link
                         onClick={handleClick}

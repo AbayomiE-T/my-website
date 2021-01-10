@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 
+import Navbar from '../Navbar'
+
 import logo from '../../portfolio-images/Mjlonir/Logo.png'
 import banner from '../../portfolio-images/Mjlonir/home.png'
 import about from '../../portfolio-images/Mjlonir/about.png'
@@ -15,17 +17,18 @@ export default function Mjlonir() {
 
     return (
         <div>
+            <Navbar bgColor="black" />
             <div className="portfolio-logo">
                 <img src={logo} alt="" />
             </div>
 
-            <div className="portfolio-banner">
-                <img className="portfolio-banner" src={banner} alt="" />
-            </div>
-
             <div className="portfolio-content">
+                <div className="portfolio-banner">
+                    <img className="portfolio-banner" src={banner} alt="" />
+                </div>
+
                 <div className="description">
-                    <h2>Mjlonir</h2>
+                    <h2 className="p-heading">Mjlonir</h2>
                     <p>I was tasked by my friend and designer <a href="https://www.wrightd3sign.com/">Rebecca Wright</a> to bring her brewery website design mockup to life. She has a fascination
                     with Norse Mythology and what better way to represent that appreciation than to create a Nordic inspired beer brand?</p>
                     <br></br>
@@ -33,7 +36,7 @@ export default function Mjlonir() {
                 </div>
 
                 <div className="description">
-                    <h2>Technologies used</h2>
+                    <h2 className="p-heading">Technologies used</h2>
                     <p>For this project, I used React and CSS to replicate the design.</p>
                 </div>
 
@@ -42,13 +45,13 @@ export default function Mjlonir() {
                 </div>
 
                 <div className="description">
-                    <h2>Home Page</h2>
+                    <h2 className="p-heading">Home Page</h2>
                     <p>Upon loading the website, you are greeted with this page. It's got a sticky navigation bar and you get to see the beer in all its glory. I used CSS Flexbox to give the images
                      an even amount of space between them.</p>
                 </div>
 
                 <div className="description">
-                    <h2>Navigation</h2>
+                    <h2 className="p-heading">Navigation</h2>
                     <p>As stated earlier, this navigation is sticky on desktops. I used the React library "react-scroll" to implement a smooth scrolling feature. Clicking on any of the navigation links
                     will instantly take you to its respective section on the page using a smooth scrolling effect.</p>
                 </div>
@@ -58,7 +61,7 @@ export default function Mjlonir() {
                 </div>
 
                 <div className="description">
-                    <h2>About Page</h2>
+                    <h2 className="p-heading">About Page</h2>
                     <p>The about page shows you how the beer is made.</p>
                 </div>
 
@@ -67,7 +70,7 @@ export default function Mjlonir() {
                 </div>
 
                 <div className="description">
-                    <h2>Brewery</h2>
+                    <h2 className="p-heading">Brewery</h2>
                     <p>The brewery page gives the user the option of buying tour tickets.</p>
                 </div>
 
@@ -76,7 +79,7 @@ export default function Mjlonir() {
                 </div>
 
                 <div className="description">
-                    <h2>Events Page</h2>
+                    <h2 className="p-heading">Events Page</h2>
                     <p>The events page shows various events available. There's a bar that gives you the option to filter the events according to options provided like dates. Clicking on
                     an event reveals an event form to register for an event.</p>
                 </div>
@@ -86,12 +89,12 @@ export default function Mjlonir() {
                 </div>
 
                 <div className="description">
-                    <h2>Contact Page</h2>
+                    <h2 className="p-heading">Contact Page</h2>
                     <p>Users can easily message the brewery company through the website using this form.</p>
                 </div>
 
                 <div className="description">
-                    <h2>Github</h2>
+                    <h2 className="p-heading">Github</h2>
                     <p>You can view the code <a href="https://github.com/AbayomiE-T/Mjlonir-Clone">here</a> and install the application into your computer following the instructions in the
                     README file.</p>
                 </div>
