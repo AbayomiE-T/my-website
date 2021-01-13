@@ -6,8 +6,8 @@ import me from '../bg-image/me.jpg';
 export default function About() {
     return (
         <section id="about">
-            <h1 class="heading" style={{ color: "white" }}>About</h1>
-            <div class="rule" style={{ backgroundColor: "white" }}></div>
+            <h1 className="heading" style={{ color: "white" }}>About</h1>
+            <div className="rule" style={{ backgroundColor: "white" }}></div>
             <p>It's "Ah-ba-yummy". I am a software developer based in Ottawa, Ontario. I have experience in both
             front-end
             and back-end development.
@@ -19,7 +19,7 @@ export default function About() {
             Smashing Pumpkins albums over again or enjoying video games.</p>
 
             <div className="about-me-wrapper">
-                <div class="image-wrapper">
+                <div className="image-wrapper">
                     <img src={me} alt="me" />
                 </div>
                 <div className="skills">

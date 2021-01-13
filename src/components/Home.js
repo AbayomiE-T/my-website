@@ -4,6 +4,7 @@ import Services from './Services'
 import Portfolio from './Portfolio'
 import About from './About'
 import Contact from './Contact'
+import Testimonials from './Testimonials'
 
 export default function Home() {
     useEffect(() => {
@@ -23,6 +24,7 @@ export default function Home() {
             <Services />
             <Portfolio />
             <About />
+            <Testimonials />
             <Contact />
         </Fragment>
     )

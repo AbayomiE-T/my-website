@@ -19,6 +19,10 @@ body {
   position: relative;
 }
 
+.none{
+  display: none;
+}
+
 /* HIGHLIGHT COLOURS */
 .h-colour-1{
   background-color: #38EFCF;
@@ -32,6 +36,15 @@ body {
   background-color: #E1F2FF;
 }
 /* END */
+
+button{
+  border: none;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+}
 
 nav{
   display: flex;
@@ -298,22 +311,64 @@ padding-bottom: 50px;
 
 .thumbnail{
   border-radius: 30px;
+  position: relative;
+}
+
+.inner{
+height: 100%;
+width: 100%;
+top: 0px;
+position: absolute;
+background-color: white;
+opacity: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 30px;
+box-shadow: 1px 3px 10px grey;
+}
+
+.inner-button{
+  background-color: white;
+  border: 2px solid #38EFCF;
+  border-radius: 40px;
+  padding: 10px 10px 10px 10px;
+}
+
+.inner > a:nth-of-type(2){
+  margin-top: 16px;
+}
+
+.inner-button:hover{
+  background-color: #38EFCF;
+  color: white;
+  transition: all 0.5s ease-out;
+}
+
+.inner-button:focus{
+  background-color: #38EFCF;
+  color: white;
+  transition: all 0.5s ease-out;
+}
+
+.thumbnail:hover > .inner{
+  opacity: 1;
+  transition: all 0.5s ease-out;
 }
 
 .portfolio-link{
   display: inline-block;
-  width: 100%;
-  height: 100%
 }
 
-.portfolio-link img{
+.thumbnail img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 30px;
 }
 
-.portfolio-link img.mjlonir{
+.thumbnail img.mjlonir{
   object-fit: contain;
 }
 
@@ -399,6 +454,48 @@ div > .skill+ .skill{
 
 /* ABOUT SECTION END */
 
+/* TESTIMONIAL SECTION START */
+
+#testimonials > div:nth-of-type(1){
+  color: white;
+  background-image: linear-gradient(to bottom right, #38EFCF, #0062AE );
+  padding-bottom: 25rem;
+}
+
+.testimonial-box{
+  background-color: white;
+  transform: translateY(-50%);
+  margin: auto;
+  width: 95%;
+  border-radius: 30px;
+  box-shadow: 1px 3px 10px grey;
+}
+
+.t-box-item{
+  text-align: center;
+}
+
+.t-box-item{
+  padding-top: 40px;
+}
+
+.t-box-item:nth-of-type(2) p{
+  width: 70%;
+  margin: auto;
+}
+
+.t-box-item:nth-of-type(3){
+  padding-bottom: 40px;
+}
+
+.t-image{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* TESTIMONIAL SECTION END */
+
 /* CONTACT SECTION */
 
 #contact{
@@ -457,17 +554,13 @@ textarea{
   text-align: right;
 }
 
-button{
-  background-color: white;
-  border: 2px solid #38EFCF;
+.form-button{
   height: 50%;
   width: 30%;
-  font-family: inherit;
+  background-color: white;
+  border: 2px solid #38EFCF;
   border-radius: 40px;
-  font-size: 1.4rem;
-  font-weight: 500;
-  cursor: pointer;
-  outline: none;
+  background-color: white;
 }
 
 footer{
@@ -512,13 +605,13 @@ footer a:hover i{
   transition: all 0.5s ease-out;
 }
 
-button:hover {
+.form-button:hover {
   background-color: #38EFCF;
   color: white;
   transition: all 0.5s ease-out;
 }
 
-button:focus{
+.form-button:focus{
   transform: scale(1,1);
   transition: all 0.5s ease-out;
 }
@@ -628,7 +721,7 @@ button:focus{
     width: 80%;
     }
 
-  button{
+  .form-button{
     width: 50%;
   }
 

@@ -10,13 +10,13 @@ import soundboard from '../portfolio-images/Soundboard/logo.png'
 const Portfolio = () => {
     return (
         <section id="portfolio">
-            <h1 class="heading">Portfolio</h1>
-            <div class="rule h-colour-1"></div>
+            <h1 className="heading">Portfolio</h1>
+            <div className="rule h-colour-1"></div>
 
             <div className="portfolio-container">
-                <PortfolioThumbnail route="/StudioSixtySix" thumbnail={sixty_six} />
-                <PortfolioThumbnail route="/Mjlonir" thumbnail={mjlonir} styles="mjlonir" />
-                <PortfolioThumbnail route="/Soundboard" thumbnail={soundboard} />
+                <PortfolioThumbnail route="/StudioSixtySix" thumbnail={sixty_six} websiteLink="https://studiosixtysix.ca/" />
+                <PortfolioThumbnail route="/Mjlonir" thumbnail={mjlonir} styles="mjlonir" websiteLink="" />
+                <PortfolioThumbnail route="/Soundboard" thumbnail={soundboard} websiteLink="" />
             </div>
         </section>
     )
