@@ -23,6 +23,10 @@ body {
   display: none;
 }
 
+.wrap{
+  background-image: linear-gradient(to bottom right, #38EFCF, #0062AE);
+}
+
 /* HIGHLIGHT COLOURS */
 .h-colour-1{
   background-color: #38EFCF;
@@ -164,7 +168,6 @@ a{
 #home{
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(to bottom right, #38EFCF, #0062AE);
   color: white;
   position: relative;
 }
@@ -231,13 +234,7 @@ a{
 
 /* SERVICES SECTION START*/
 
-#services{
-  min-height: 100vh;
-}
-
 #services > div:nth-of-type(1){
-  background-image: linear-gradient(to bottom right, #38EFCF, #0062AE);
-  height: 25vh;
   padding-bottom: 16rem;
 }
 
@@ -250,10 +247,11 @@ a{
 }
 
 #services > div:nth-of-type(2){
-  min-height: 50vh;
+  background-color: white;
 }
 
 .service-container{
+  transform: translateY(-25%);
   width: 80%;
   box-shadow: 1px 3px 10px grey;
   background-color: white;
@@ -382,7 +380,6 @@ box-shadow: 1px 3px 10px grey;
 
 #about{
 min-height: 100vh;
-background-image: linear-gradient(to bottom right,  #38EFCF, #0062AE);
 padding-bottom: 8rem;
 }
 
@@ -458,8 +455,11 @@ div > .skill+ .skill{
 
 #testimonials > div:nth-of-type(1){
   color: white;
-  background-image: linear-gradient(to bottom right, #38EFCF, #0062AE );
   padding-bottom: 25rem;
+}
+
+#testimonials > div:nth-of-type(2){
+  background-color: white;
 }
 
 .testimonial-box{
@@ -552,13 +552,16 @@ textarea{
 .form-item-button{
   height: 100px;
   text-align: right;
+  margin-top: 24px;
+  position: relative;
+  left: 10px;
 }
 
 .form-button{
   height: 50%;
   width: 30%;
   background-color: white;
-  border: 2px solid #38EFCF;
+  border: 2px solid#0062AE;
   border-radius: 40px;
   background-color: white;
 }
@@ -566,7 +569,6 @@ textarea{
 footer{
   min-height: 8vh;
   width: 100%;
-  background-color: #38EFCF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -577,11 +579,15 @@ footer{
 }
 
 footer a{
-  display: inline-block;
+  display: flex;
+  height: 25px;
+  width: 25px;
   border: 2px solid white;
   border-radius: 50%;
   padding: 10px;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
   }
   
 footer > a + a {
@@ -597,23 +603,18 @@ footer i{
 
 footer a:hover{
   background-color: white;
-  transition: all 0.5s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 footer a:hover i{
-  color: #38EFCF;
-  transition: all 0.5s ease-out;
+  color: #0062AE;
+  transition: all 0.25s ease-out;
 }
 
 .form-button:hover {
-  background-color: #38EFCF;
+  background-color:  #0062AE;
   color: white;
-  transition: all 0.5s ease-out;
-}
-
-.form-button:focus{
-  transform: scale(1,1);
-  transition: all 0.5s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 /* END */
@@ -672,9 +673,14 @@ footer a:hover i{
 }
 
 @media only screen and (max-width: 990px){
+  
+  #services > div:nth-of-type(1){
+    padding-bottom: 20rem;
+  }
 
   .service-container{
     flex-direction: column;
+    transform: translateY(-12.5%);
   }
 
   .service-container > div{
@@ -741,9 +747,6 @@ footer a:hover i{
 }
 
 @media only screen and (max-width: 500px){
-  #services > div:nth-of-type(1){
-    padding-bottom: 25rem;
-  }
 
   .portfolio-container{
     display: block;

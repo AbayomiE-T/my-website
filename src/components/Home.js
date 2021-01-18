@@ -12,19 +12,23 @@ export default function Home() {
     }, []);
     return (
         <Fragment>
-            <section id="home">
+            <div className="wrap">
+                <section id="home">
 
-                <div className="slogan">
-                    <p>Creating something beautiful...</p>
-                    <p>One line of code at a time.</p>
-                </div>
+                    <div className="slogan">
+                        <p>Creating something beautiful...</p>
+                        <p>One line of code at a time.</p>
+                    </div>
 
-                <Navbar />
-            </section>
-            <Services />
+                    <Navbar />
+                </section>
+                <Services />
+            </div>
             <Portfolio />
-            <About />
-            <Testimonials />
+            <div className="wrap">
+                <About />
+                <Testimonials />
+            </div>
             <Contact />
         </Fragment>
     )

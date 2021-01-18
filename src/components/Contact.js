@@ -50,7 +50,7 @@ export default function Contact() {
                     </form>
                 </div>
             </section>
-            <footer>
+            <footer className="h-colour-2">
                 <a href="https://www.linkedin.com/in/abayomiadebowale/"><i className='fab fa-linkedin-in'></i></a>
                 <a href="https://github.com/AbayomiE-T?tab=repositories"><i className='fab fa-github'></i></a>
             </footer>
