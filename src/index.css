@@ -76,7 +76,7 @@ a{
 
 .nav-item a{
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .nav-item a:hover{
@@ -84,7 +84,7 @@ a{
 }
 
 .logo h1{
-  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
 }
 
 .logo h1 a{
