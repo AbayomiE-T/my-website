@@ -31,7 +31,7 @@ export default function About() {
                         <SkillDetail skillName="React" percentage="80" width="80%" />
                         <SkillDetail skillName="Redux" percentage="80" width="80%" />
                         <SkillDetail skillName="Bootstrap" percentage="60" width="60%" />
-                        <SkillDetail skillName="Django" percentage="60" width="60%" />
+                        <SkillDetail skillName="Node.js/Express" percentage="60" width="60%" />
                         <SkillDetail skillName="Python" percentage="75" width="75%" />
                         <SkillDetail skillName="Java" percentage="70" width="70%" />
                         <SkillDetail skillName="C++" percentage="70" width="70%" />

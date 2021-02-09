@@ -38,7 +38,7 @@ export default function Soundboard() {
                 </div>
                 <div className="description">
                     <h2 className="p-heading">Technologies used</h2>
-                    <p>For this project, I used React, Redux and the cloud platform Firebase to build it up.</p>
+                    <p>For this project, I used React, Redux and the cloud platform, Firebase, to build it up.</p>
                 </div>
 
                 <div className="description">
@@ -76,6 +76,11 @@ export default function Soundboard() {
                      data from from the firestore has been loaded on the profile component, the data is then passed into board component to display to the user.</p>
                 </div>
 
+
+                <div className="description">
+                    <h2 className="p-heading">Website</h2>
+                    <p>You can view the website <a href="https://soundboard-react-app.firebaseapp.com/">here</a>.</p>
+                </div>
 
                 <div className="description">
                     <h2 className="p-heading">Github</h2>

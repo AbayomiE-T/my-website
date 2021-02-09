@@ -94,6 +94,11 @@ export default function Mjlonir() {
                 </div>
 
                 <div className="description">
+                    <h2 className="p-heading">Website</h2>
+                    <p>You can view the website <a href="https://mjlonir.netlify.app/">here</a>.</p>
+                </div>
+
+                <div className="description">
                     <h2 className="p-heading">Github</h2>
                     <p>You can view the code <a href="https://github.com/AbayomiE-T/Mjlonir-Clone">here</a> and install the application into your computer following the instructions in the
                     README file.</p>

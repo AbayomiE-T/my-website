@@ -3,7 +3,7 @@ import React from 'react'
 import PortfolioThumbnail from './PortfolioThumbnail'
 
 import sixty_six from '../portfolio-images/Studio Sixty Six/logo-1.webp'
-import mjlonir from '../portfolio-images/Mjlonir/Logo.png'
+import mjlonir from '../portfolio-images/Mjlonir/Logo-2.png'
 import soundboard from '../portfolio-images/Soundboard/logo.png'
 
 
@@ -15,7 +15,7 @@ const Portfolio = () => {
 
             <div className="portfolio-container">
                 <PortfolioThumbnail route="/StudioSixtySix" thumbnail={sixty_six} websiteLink="https://studiosixtysix.ca/" />
-                <PortfolioThumbnail route="/Mjlonir" thumbnail={mjlonir} styles="mjlonir" websiteLink="" />
+                <PortfolioThumbnail route="/Mjlonir" thumbnail={mjlonir} styles="" websiteLink="" />
                 <PortfolioThumbnail route="/Soundboard" thumbnail={soundboard} websiteLink="" />
             </div>
         </section>
