@@ -8,15 +8,9 @@ export default function About() {
         <section id="about">
             <h1 className="heading" style={{ color: "white" }}>About</h1>
             <div className="rule" style={{ backgroundColor: "white" }}></div>
-            <p>It's "Ah-ba-yummy". I am a software developer based in Ottawa, Ontario. I have experience in both
-            front-end
-            and back-end development.
-            As a recent Computer Science graduate, i'm ready to apply my skills to the software industry, take on
-            new
-            challenges and also learn from
-            experts who have been in the field longer than I have. In my downtime, you can find me listening to the
-            same
-            Smashing Pumpkins albums over again or enjoying video games.</p>
+            <p>Self-driven and collaborative early career software developer with practical experience in various industry sectors
+                including telecommunications and ecommerce. Strong capability in HTML, CSS, JavaScript/Typescript and frameworks including Angular and React. Passionate
+                about taking on new challenges and building interactive web applications.</p>
 
             <div className="about-me-wrapper">
                 <div className="image-wrapper">
@@ -28,13 +22,14 @@ export default function About() {
                         <SkillDetail skillName="CSS" percentage="90" width="90%" />
                         <SkillDetail skillName="HTML" percentage="90" width="90%" />
                         <SkillDetail skillName="Javascript" percentage="90" width="90%" />
+                        <SkillDetail skillName="Typescript" percentage="90" width="90%" />
+                        <SkillDetail skillName="Angular 10+" percentage="90" width="80%" />
                         <SkillDetail skillName="React" percentage="80" width="80%" />
                         <SkillDetail skillName="Redux" percentage="80" width="80%" />
                         <SkillDetail skillName="Bootstrap" percentage="60" width="60%" />
                         <SkillDetail skillName="Node.js/Express" percentage="60" width="60%" />
                         <SkillDetail skillName="Python" percentage="75" width="75%" />
                         <SkillDetail skillName="Java" percentage="70" width="70%" />
-                        <SkillDetail skillName="C++" percentage="70" width="70%" />
                         <SkillDetail skillName="Github" percentage="70" width="70%" />
                     </div>
                 </div>
